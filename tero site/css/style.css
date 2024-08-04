@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('./fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('./fonts/Gilroy-Medium.woff') format('woff'),
+        url('./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('./fonts/Gilroy-Extrabold.eot') format('embedded-opentype'),
+        url('./fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('./fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('./fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('./fonts/Gilroy-Semibold.eot') format('embedded-opentype'),
+        url('./fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('./fonts/Gilroy-Semibold.woff') format('woff'),
+        url('./fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+body {
+    font-family: "Gilroy", sans-serif;
+    background:#f9f9f9;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:45px;
+    font-weight: 500;
+}
+.btn{
+    background: #75BF7A;
+    width: 182px;
+    height: 50px;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:6px;
+    font-size:22px;
+    font-weight: 600;
+}
+
+.header {
+    background-color: #fff;
+    padding: 70px 0 40px 0;
+}
+.main {
+    background-color: #f9f9f9;
+}
+.black-btn {
+    background: #000;
+    width: 260px;
+    height: 66px;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    font-size:25px;
+    font-weight: 600;
+    gap:15px;
+}
+
+.download-container{
+    max-width: 610px;
+}
+.download-app__text-and-buttons h2 {
+    font-size:54px;
+    line-height: 65.91px;
+    padding-bottom:25px;
+}
+
+.download-app__text-and-buttons p {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.download-app__small-text {
+    max-width: 540px;
+    padding-bottom: 60px;
+    color: #9E9DA2;
+}
+
+.download-app__buttons{
+    display:flex;
+    gap:30px;
+}
+
+.download-app .container {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:85px;
+}
+.download-app__text-and-buttons {
+    align-self: flex-end;
+}
+
+.mobile-apply .container{
+    background: #75BF7A;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 70px;
+    margin-bottom:130px;
+}
+.input-phone {
+    background: #fff;
+    width: 500px;
+    height: 67px;
+    border-radius: 5px;
+    padding-left: 35px;
+    margin-right: 10px;
+}
+.number-and-button {
+    display:flex;
+}
+
+.mobile-apply .black-btn {
+    font-size:22px;
+}
+.mobile-apply p {
+    max-width:233px;
+    font-size: 25px;
+    color:#fff;
+}
+
+.tere-works__text-info {
+    text-align: center;
+}
+
+.title {
+    font-size:46px;
+    padding-bottom:25px;
+    text-align: center;
+}
+
+.tere-works__small-text {
+    font-size: 23px;
+    color: #9E9DA2;
+    padding-bottom: 65px;
+}
+
+.tere-works__circle {
+    height: 400px;
+    width: 400px;
+    background-color: #75BF7A;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tere-works__main-phone {
+
+}
+.tere-works__step span {
+    text-align: center;
+}
+
+.tere-works__steps {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                "item1 item3 item2"
+                "item4 item3 item5";
+}
+
+.first-step { 
+    grid-area: item1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравниваем вправо */
+    text-align: right;
+}
+.second-step {
+    grid-area: item2; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем влево */
+}
+.third-step {
+    grid-area: item3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fourth-step {
+    grid-area: item4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Выравниваем вправо */
+    text-align: right;
+}
+.fifth-step {
+    grid-area: item5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравниваем влево */
+}
+
+.tere-works__circle {
+    height: 400px;
+    width: 400px;
+    background-color: #75BF7A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Выравниваем по центру */
+}
+
+.first-step, .second-step {
+    margin-top: 50px;
+}
+
+.tere-works__step p {
+    color:#9E9DA2;
+    font-size: 20px;
+}
+
+.tere-works__step h3 {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.tere-works__step {
+    margin-bottom: 60px;
+}
+
+.tere-works__circle-and-phone {
+    padding-bottom: 40px;
+}
+
+.tere-works__four-dot{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 85px;
+}
+
+.tere-benefits__step-card {
+    display: flex;
+    width: 1060px;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.first-benefit-step {
+    grid-area: tfs1;
+}
+
+.second-benefit-step{
+    grid-area: tfs2;
+}
+
+.third-benefit-step{
+    grid-area: tfs3;
+}
+
+.tere-benefits__steps {
+    display: grid;
+    grid-template-areas: "tfs1 tfs1 tfs1 tfs1 tfs1 tfs1 tfs1 tfs1 tfs1 ." 
+                         ". tfs2 tfs2 tfs2 tfs2 tfs2 tfs2 tfs2 tfs2 tfs2" 
+                        "tfs3 tfs3 tfs3 tfs3 tfs3 tfs3 tfs3 tfs3 tfs3 .";
+    justify-content: center;
+}
+
+.tere-benefits__step-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tere-benefits__step-text {
+    margin: auto 0;
+}
+.tere-benefits__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tere-benefits__title{
+    margin-bottom: 50px;
+}
+.tere-benefits__title span {
+    color:#75BF7A;
+}
+
+.tere-benefits__step-title{
+    padding-bottom: 40px;
+}
+
+.tere-benefits__step-title p {
+    color:#75BF7A;
+    font-size: 46px;
+}
+.tere-benefits__step-title h3 {
+    font-size: 30px;
+}
+
+.tere-benefits__step-subtitle {
+    font-size: 24px;
+    color:#9E9DA2;
+}
+
+footer {
+    background: #fff;
+}
+
+.footer .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0 40px 0;
+    border-bottom: 1px solid #ECECEC;
+    margin-bottom: 40px;
+}
+.footer__black-btn {
+    display: flex;
+    gap: 40px;
+
+}
+.footer__black-btn .black-btn {
+    width: 178px;
+    height: 46px;
+    font-size: 17px;
+}
+
+.footer__black-btn .black-btn img {
+    max-width: 66%;
+    max-height: 66%;
+}
+
+.footer__end-text {
+    text-align: center;
+    color:#75BF7A;
+    padding-bottom: 100px;
+}
